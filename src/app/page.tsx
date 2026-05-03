@@ -58,7 +58,7 @@ export default function Home() {
               {/* Queen Card */}
               <Link href="/queen" className="group relative h-[600px] overflow-hidden rounded-xl shadow-xl">
                 <Image
-                  src="https://picsum.photos/seed/kalyra-queen/600/800"
+                  src= :"http://googleusercontent.com/image_generation_content/120", // Queen Link
                   alt="Queen Collection"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"
@@ -76,7 +76,7 @@ export default function Home() {
               {/* King Card */}
               <Link href="/king" className="group relative h-[600px] overflow-hidden rounded-xl shadow-xl">
                 <Image
-                  src="https://picsum.photos/seed/kalyra-king/600/800"
+                  src="http://googleusercontent.com/image_generation_content/121", // King Link
                   alt="King Collection"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"
@@ -94,7 +94,8 @@ export default function Home() {
               {/* Vault Card */}
               <Link href="/vault" className="group relative h-[600px] overflow-hidden rounded-xl shadow-xl">
                 <Image
-                  src="https://picsum.photos/seed/kalyra-vault/600/800"
+                  src="http://googleusercontent.com/image_generation_content/122", // Vault Link
+  },
                   alt="The Vault"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"
@@ -192,5 +193,4 @@ export default function Home() {
       <Footer />
     </div>
   )
-}
-
+/
