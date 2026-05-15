@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 38 38% 95%; /* Cream #F7F3EC */
+    --foreground: 0 0% 10%; /* Charcoal #1A1A1A */
+    --card: 38 38% 98%;
+    --card-foreground: 0 0% 10%;
+    --popover: 38 38% 95%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 46 65% 53%; /* Gold #D4AF37 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 317 43% 21%; /* Plum #4B1E3F */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 180 79% 24%; /* Teal #0D6D6E */
+    --muted-foreground: 180 20% 40%;
+    --accent: 46 65% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 46 30% 80%;
+    --input: 46 30% 90%;
+    --ring: 46 65% 53%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 317 43% 10%;
+    --foreground: 38 38% 95%;
+    --primary: 46 65% 53%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 180 79% 24%;
+    --secondary-foreground: 38 38% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.watermark-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  opacity: 0.3;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #1A1A1A;
+}
+
+.glow-gold {
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+}
+
