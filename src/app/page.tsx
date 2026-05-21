@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Header } from "@/components/layout/Header"
-import { Footer } from "@/components/layout/Footer"
-import { Button } from "@/components/ui/button"
-import { PlaceHolderImages } from "@/lib/placeholder-images"
+import { Header } from "../components/layout/Header"
+import { Footer } from "../components/layout/Footer"
+import { Button } from "../components/ui/button"
+import { PlaceHolderImages } from "../lib/placeholder-images"
 import { ChevronRight, ShieldCheck, Download, Gem } from "lucide-react"
 
 export default function Home() {
