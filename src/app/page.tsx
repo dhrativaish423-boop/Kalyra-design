@@ -58,7 +58,7 @@ export default function Home() {
               {/* Queen Card */}
               <Link href="/queen" className="group relative h-[600px] overflow-hidden rounded-xl shadow-xl">
                 <Image
-                  src= :"http://googleusercontent.com/image_generation_content/120", // Queen Link
+                  src= "http://googleusercontent.com/image_generation_content/120", // Queen Link
                   alt="Queen Collection"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-1000"
